@@ -23,7 +23,7 @@ st.title("AI-Powered Technical Stock Analysis Dashboard")
 st.sidebar.header("Configuration")
 
 # Sidebar inputs
-ticker_symbol = st.sidebar.text_input("Enter Stock Ticker", "AAPL").upper()
+ticker_symbol = st.sidebar.text_input("Enter Stock Ticker", "TCS.NS").upper()
 start_date = st.sidebar.date_input("Start Date", datetime.now() - timedelta(days=365))
 end_date = st.sidebar.date_input("End Date", datetime.now())
 analysis_type = st.sidebar.selectbox("Analysis Type", ["Technical Analysis Summary", "Sentiment Analysis", "Trend Prediction"])
